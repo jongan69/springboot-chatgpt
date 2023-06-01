@@ -7,6 +7,3 @@ This project is a RESTful API designed with Spring Boot that utilizes OpenAI's G
 - Java 11 or higher
 - Maven
 - An OpenAI API key (you can obtain this from [OpenAI's website](https://beta.openai.com/signup/))
-# springboot-chatgpt
-# springboot-chatgpt
-# springboot-chatgpt
