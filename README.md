@@ -12,13 +12,13 @@ This project is a RESTful API designed with Spring Boot that utilizes OpenAI's G
 
 Here's a brief summary of the key components:
 
-OpenAIConfig.Java: This is a configuration class for the Spring Framework. It sets up a RestTemplate bean and adds an interceptor to it. This bean is used to make HTTP requests to the OpenAI service, with the OpenAI API key injected into the Authorization header of each request​1​.
+OpenAIConfig.Java: This is a configuration class for the Spring Framework. It sets up a RestTemplate bean and adds an interceptor to it. This bean is used to make HTTP requests to the OpenAI service, with the OpenAI API key injected into the Authorization header of each request.
 
-CustomBotController.Java: This is a REST controller that handles incoming HTTP GET requests to the /bot/chat URL path. It takes a string parameter prompt from the request URL and creates a ChatGPTRequest object with the model and prompt values. The request is sent to the OpenAI API and the response is mapped to a ChatGptResponse object. The content of the first choice from the response is returned as a string​1​.
+CustomBotController.Java: This is a REST controller that handles incoming HTTP GET requests to the /bot/chat URL path. It takes a string parameter prompt from the request URL and creates a ChatGPTRequest object with the model and prompt values. The request is sent to the OpenAI API and the response is mapped to a ChatGptResponse object. The content of the first choice from the response is returned as a string.
 
-ChatGPTRequest.Java: This Data Transfer Object (DTO) class represents a request to the ChatGPT API. It contains the model information and a list of Message objects, where each Message represents a conversation message with a sender and content​1​.
+ChatGPTRequest.Java: This Data Transfer Object (DTO) class represents a request to the ChatGPT API. It contains the model information and a list of Message objects, where each Message represents a conversation message with a sender and content.
 
-ChatGPTResponse.Java: This DTO class represents the response from the ChatGPT API. It contains a list of Choice objects, each representing a response from the model. Each Choice has an index and a Message object representing the content of the choice​1​.
+ChatGPTResponse.Java: This DTO class represents the response from the ChatGPT API. It contains a list of Choice objects, each representing a response from the model. Each Choice has an index and a Message object representing the content of the choice.
 
 Message.Java: Message.Java is a DTO that represents a conversation message. It contains a role which indicates the sender's role in the conversation, and content which is the content of the message.
 
